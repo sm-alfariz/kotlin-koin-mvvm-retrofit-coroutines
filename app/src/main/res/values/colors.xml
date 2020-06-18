@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/main_500</color>
+    <color name="colorPrimaryDark">@color/main_500</color>
+    <color name="colorAccent">@color/main_900</color>
+
+    <color name="main_50">#e1f5fe</color>
+    <color name="main_100">#b3e5fc</color>
+    <color name="main_200">#81d4fa</color>
+    <color name="main_300">#4fc3f7</color>
+    <color name="main_400">#29b6f6</color>
+    <color name="main_500">#03a9f4</color>
+    <color name="main_600">#03a2f3</color>
+    <color name="main_700">#0298f1</color>
+    <color name="main_800">#028fef</color>
+    <color name="main_900">#017eec</color>
+    <color name="main_A200">#e0efff</color>
+    <color name="main_A400">#add4ff</color>
+    <color name="main_A700">#93c7ff</color>
+    <color name="second_50">#f9fafb</color>
+    <color name="second_100">#f1f3f5</color>
+    <color name="second_200">#e7ecee</color>
+    <color name="second_300">#dde4e7</color>
+    <color name="second_400">#d6dee1</color>
+    <color name="second_500">#cfd8dc</color>
+    <color name="second_600">#cad4d8</color>
+    <color name="second_700">#c3ced3</color>
+    <color name="second_800">#bdc8ce</color>
+    <color name="second_900">#b2bfc5</color>
+    <color name="second_A100">#ffffff</color>
+</resources>
