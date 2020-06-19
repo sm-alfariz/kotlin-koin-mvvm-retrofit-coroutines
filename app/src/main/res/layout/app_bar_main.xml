@@ -14,19 +14,24 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        app:elevation="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_width="match_parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            style="@style/ToolBarStyle.Event"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_nav_closed_icon"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleMarginStart="4dp"
+            android:background="#1389E0" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main"/>
+    <include android:id="@+id/contentMain" layout="@layout/content_main"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
