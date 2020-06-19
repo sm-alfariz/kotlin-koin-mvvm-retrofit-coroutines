@@ -1,16 +1,43 @@
 <resources>
-  <!-- Base application theme. -->
-  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-      <!-- Customize your theme here. -->
-      <item name="colorPrimary">@color/colorPrimary</item>
-      <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-      <item name="colorAccent">@color/colorAccent</item>
-  </style>
-    <style name="AppTheme.NoActionBar">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1389E0</item>
+        <item name="colorPrimaryDark">#1389E0</item>
+        <item name="colorAccent">@color/second_500</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="homeAsUpIndicator">@drawable/ic_nav_closed_icon</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
 
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_nav_closed_icon</item>
+    </style>
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#6DA6D0</item>
+        <item name="android:progressTint">#1389E0</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base"/>
+
+    <style name="ToolBarStyle.Base" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>
