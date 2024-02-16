@@ -28,7 +28,7 @@ class MainApp : Application() {
             Timber.plant(Timber.DebugTree())
         }
         startKoin {
-            androidLogger(Level.DEBUG)
+            androidLogger(Level.DEBUG)//FIXME if upgrade AGP to over 7 use koin 2.x.x will get error "No virtual method elapsedNow()D in class Lkotlin/time/TimeMark " https://github.com/InsertKoinIO/koin/issues/1076
             androidContext(this@MainApp)
             modules(listOf(
                 //databaseModule,
