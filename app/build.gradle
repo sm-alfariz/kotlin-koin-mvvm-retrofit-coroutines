@@ -1,3 +1,6 @@
+plugins {
+   alias(libs.plugins.serialization)
+}
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
@@ -74,16 +77,20 @@ dependencies {
 
     // okhttp
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation "com.squareup.okhttp3:okhttp:${libs.versions.okhttp.get()}"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.11.0"
 
     // retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation libs.retrofit2.converter.kotlinx.serialization
 
     // kotlin based dependency injection koin
     implementation  libs.koin.core
     implementation  libs.koin.android
+
+    implementation libs.kotlinx.serialization
+    implementation libs.kotlinx.serialization.json
 }
